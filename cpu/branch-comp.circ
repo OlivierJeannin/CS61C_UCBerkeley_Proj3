@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.8.0-61c.b5e883a" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.b5e883a(https://github.com/61c-teach/logisim-evolution).
+<project source="3.8.0-61c.f1d5ac0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.f1d5ac0(https://github.com/61c-teach/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -107,12 +107,74 @@
     <comp lib="0" loc="(250,310)" name="Tunnel">
       <a name="label" val="BrUn"/>
     </comp>
+    <comp lib="0" loc="(440,340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BrData1"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(440,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BrData2"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(440,440)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BrData1"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(440,480)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BrData2"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(570,350)" name="Tunnel">
+      <a name="label" val="BrEqS"/>
+    </comp>
+    <comp lib="0" loc="(570,380)" name="Tunnel">
+      <a name="label" val="BrLtS"/>
+    </comp>
+    <comp lib="0" loc="(570,450)" name="Tunnel">
+      <a name="label" val="BrEqUn"/>
+    </comp>
+    <comp lib="0" loc="(570,480)" name="Tunnel">
+      <a name="label" val="BrLtUn"/>
+    </comp>
+    <comp lib="0" loc="(800,310)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BrEqS"/>
+    </comp>
+    <comp lib="0" loc="(800,350)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BrEqUn"/>
+    </comp>
+    <comp lib="0" loc="(800,450)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BrLtS"/>
+    </comp>
+    <comp lib="0" loc="(800,490)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BrLtUn"/>
+    </comp>
+    <comp lib="0" loc="(870,370)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="BrUn"/>
+    </comp>
+    <comp lib="0" loc="(870,510)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="BrUn"/>
+    </comp>
     <comp lib="0" loc="(930,130)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="BrEq"/>
     </comp>
     <comp lib="0" loc="(930,180)" name="Tunnel">
       <a name="facing" val="east"/>
+      <a name="label" val="BrLt"/>
+    </comp>
+    <comp lib="0" loc="(940,330)" name="Tunnel">
+      <a name="label" val="BrEq"/>
+    </comp>
+    <comp lib="0" loc="(940,470)" name="Tunnel">
       <a name="label" val="BrLt"/>
     </comp>
     <comp lib="0" loc="(950,130)" name="Pin">
@@ -129,13 +191,22 @@
       <a name="locked" val="true"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="5" loc="(169,92)" name="Text">
+    <comp lib="2" loc="(890,330)" name="Multiplexer"/>
+    <comp lib="2" loc="(890,470)" name="Multiplexer"/>
+    <comp lib="3" loc="(520,360)" name="Comparator">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="3" loc="(520,460)" name="Comparator">
+      <a name="mode" val="unsigned"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="5" loc="(165,90)" name="Text">
       <a name="text" val="INPUTS to your circuit"/>
     </comp>
-    <comp lib="5" loc="(562,43)" name="Text">
+    <comp lib="5" loc="(560,40)" name="Text">
       <a name="text" val="DON'T CHANGE THE LOCATIONS OF THE INPUTS AND OUTPUTS!"/>
     </comp>
-    <comp lib="5" loc="(974,95)" name="Text">
+    <comp lib="5" loc="(970,95)" name="Text">
       <a name="text" val="OUTPUT from your circuit"/>
     </comp>
     <wire from="(1020,100)" to="(1020,210)"/>
@@ -146,9 +217,49 @@
     <wire from="(250,180)" to="(250,230)"/>
     <wire from="(250,270)" to="(250,290)"/>
     <wire from="(250,330)" to="(250,340)"/>
+    <wire from="(440,340)" to="(450,340)"/>
+    <wire from="(440,380)" to="(450,380)"/>
+    <wire from="(440,440)" to="(450,440)"/>
+    <wire from="(440,480)" to="(450,480)"/>
+    <wire from="(450,340)" to="(450,350)"/>
+    <wire from="(450,350)" to="(480,350)"/>
+    <wire from="(450,370)" to="(450,380)"/>
+    <wire from="(450,370)" to="(480,370)"/>
+    <wire from="(450,440)" to="(450,450)"/>
+    <wire from="(450,450)" to="(480,450)"/>
+    <wire from="(450,470)" to="(450,480)"/>
+    <wire from="(450,470)" to="(480,470)"/>
+    <wire from="(520,360)" to="(560,360)"/>
+    <wire from="(520,370)" to="(560,370)"/>
+    <wire from="(520,460)" to="(560,460)"/>
+    <wire from="(520,470)" to="(560,470)"/>
+    <wire from="(560,350)" to="(560,360)"/>
+    <wire from="(560,350)" to="(570,350)"/>
+    <wire from="(560,370)" to="(560,380)"/>
+    <wire from="(560,380)" to="(570,380)"/>
+    <wire from="(560,450)" to="(560,460)"/>
+    <wire from="(560,450)" to="(570,450)"/>
+    <wire from="(560,470)" to="(560,480)"/>
+    <wire from="(560,480)" to="(570,480)"/>
     <wire from="(80,100)" to="(250,100)"/>
     <wire from="(80,100)" to="(80,340)"/>
     <wire from="(80,340)" to="(250,340)"/>
+    <wire from="(800,310)" to="(810,310)"/>
+    <wire from="(800,350)" to="(810,350)"/>
+    <wire from="(800,450)" to="(810,450)"/>
+    <wire from="(800,490)" to="(810,490)"/>
+    <wire from="(810,310)" to="(810,320)"/>
+    <wire from="(810,320)" to="(860,320)"/>
+    <wire from="(810,340)" to="(810,350)"/>
+    <wire from="(810,340)" to="(860,340)"/>
+    <wire from="(810,450)" to="(810,460)"/>
+    <wire from="(810,460)" to="(860,460)"/>
+    <wire from="(810,480)" to="(810,490)"/>
+    <wire from="(810,480)" to="(860,480)"/>
+    <wire from="(870,350)" to="(870,370)"/>
+    <wire from="(870,490)" to="(870,510)"/>
+    <wire from="(890,330)" to="(940,330)"/>
+    <wire from="(890,470)" to="(940,470)"/>
     <wire from="(930,100)" to="(1020,100)"/>
     <wire from="(930,100)" to="(930,110)"/>
     <wire from="(930,130)" to="(950,130)"/>
